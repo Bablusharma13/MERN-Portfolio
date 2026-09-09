@@ -1,0 +1,264 @@
+// Single source of truth for portfolio content.
+// Edit this file to update what's shown on the site and what the AI chat knows.
+
+export const profile = {
+  name: "Bablu Kumar",
+  initials: "BK",
+  role: "MERN Stack Developer",
+  tagline: "Full-Stack Developer · MERN & Next.js",
+  location: "Chandigarh, India",
+  yearsExperience: "2+",
+  availability: "Open to full-time opportunities",
+  summary:
+    "MERN Stack Developer with 2+ years of experience building and scaling full-stack SaaS applications using React.js, Next.js, Node.js, and Express.js. Skilled in REST APIs, multi-tenant architecture, JWT/RBAC authentication, and performance optimization using MongoDB, Redis, and Elasticsearch.",
+  contact: {
+    email: "bk392534@gmail.com",
+    phone: "+91 7667869102",
+    linkedin: "https://www.linkedin.com/in/bablu-kumar-7b7028275/",
+    github: "https://github.com/bablusharma13",
+  },
+  resumeUrl: "/resume.pdf",
+  avatarUrl: "/avatar.jpg",
+  languages: [
+    { name: "Hindi", level: "Full Professional" },
+    { name: "English", level: "Limited Working" },
+  ],
+  stats: [
+    { label: "Years of experience", value: "2+" },
+    { label: "SaaS platforms shipped", value: "3" },
+    { label: "Domain records handled", value: "600M+" },
+  ],
+} as const;
+
+export const skillGroups = [
+  {
+    category: "Programming",
+    skills: ["JavaScript", "TypeScript", "Python"],
+  },
+  {
+    category: "Frontend",
+    skills: [
+      "Next.js",
+      "React.js",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "TanStack React Query",
+      "HTML5",
+      "CSS3",
+    ],
+  },
+  {
+    category: "Mobile",
+    skills: ["React Native", "Expo", "React Navigation"],
+  },
+  {
+    category: "Backend",
+    skills: ["Node.js", "Express.js", "REST APIs", "JWT", "RBAC", "Socket.io"],
+  },
+  {
+    category: "Databases",
+    skills: ["MongoDB", "MySQL", "Redis"],
+  },
+  {
+    category: "Search & Background Jobs",
+    skills: ["Elasticsearch", "BullMQ"],
+  },
+  {
+    category: "Payments",
+    skills: ["Stripe", "Razorpay"],
+  },
+  {
+    category: "DevOps & Tools",
+    skills: ["CI/CD", "Docker", "Git", "GitHub", "Postman"],
+  },
+  {
+    category: "Testing",
+    skills: ["Jest", "Playwright", "React Testing Library", "Supertest", "Vitest"],
+  },
+  {
+    category: "AI-Assisted Development",
+    skills: ["Claude", "Codex", "ChatGPT", "Cursor", "Prompt Engineering"],
+  },
+] as const;
+
+export type Experience = {
+  company: string;
+  role: string;
+  location: string;
+  period: string;
+  current?: boolean;
+  highlights: string[];
+  project?: {
+    name: string;
+    tech: string[];
+    highlights: string[];
+  };
+};
+
+export const experience: Experience[] = [
+  {
+    company: "AllHeart Web Pvt. Ltd.",
+    role: "MERN Stack Developer",
+    location: "Chandigarh, India",
+    period: "July 2025 – Present",
+    current: true,
+    highlights: [
+      "Built responsive frontend and backend features for a multi-tenant SaaS platform using React.js, Next.js, and Tailwind CSS.",
+      "Developed secure REST APIs and authentication using Node.js, Express.js, JWT, and RBAC, with Elasticsearch-based search and Redis-optimized performance.",
+    ],
+    project: {
+      name: "MarketXY — Domain Intelligence Platform",
+      tech: [
+        "Next.js",
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Elasticsearch",
+        "Redis",
+        "Redux Toolkit",
+        "Stripe",
+        "Docker",
+      ],
+      highlights: [
+        "Built a domain intelligence platform handling 600M+ domain records across three applications with a shared Node.js backend.",
+        "Developed REST APIs with JWT/RBAC, used MongoDB and Elasticsearch for domain search, and integrated Stripe billing with Redis caching.",
+        "Built async CSV/Excel export with BullMQ and ExcelJS, and managed frontend state using Redux Toolkit and TanStack React Query.",
+      ],
+    },
+  },
+  {
+    company: "Pisoft Informatics Pvt. Ltd.",
+    role: "MERN Stack Developer",
+    location: "Mohali District, India",
+    period: "October 2024 – July 2025",
+    highlights: [
+      "Built and maintained web features using the MERN stack, with reusable React.js/Redux Toolkit UI components and REST APIs backed by MongoDB, MySQL, and Docker.",
+    ],
+    project: {
+      name: "API Monitoring & Observability Platform",
+      tech: [
+        "Next.js",
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Redis",
+        "BullMQ",
+        "Socket.io",
+        "TypeScript",
+        "Docker",
+      ],
+      highlights: [
+        "Built a SaaS platform for real-time API health, uptime, and response-time monitoring with a Redis/BullMQ background engine.",
+        "Implemented incident management, automated recovery detection, and live Socket.io dashboards.",
+        "Secured the platform with JWT, RBAC, and rate limiting; added alerts, status pages, and Docker-based deployment.",
+      ],
+    },
+  },
+  {
+    company: "A2IT InternEdge",
+    role: "Web Development Intern",
+    location: "Mohali District, India",
+    period: "July 2023 – January 2024",
+    highlights: [
+      "Assisted in building responsive web pages with HTML, CSS, JavaScript, and React.js, and gained hands-on Git and REST API experience.",
+    ],
+  },
+];
+
+export type Project = {
+  name: string;
+  tagline: string;
+  description: string[];
+  tech: string[];
+  type: "Company Project" | "Personal Project";
+  links?: { github?: string; live?: string };
+};
+
+export const projects: Project[] = [
+  {
+    name: "MarketXY",
+    tagline: "Domain Intelligence Platform",
+    type: "Company Project",
+    tech: [
+      "Next.js",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Elasticsearch",
+      "Redis",
+      "Redux Toolkit",
+      "Stripe",
+      "Docker",
+    ],
+    description: [
+      "Domain intelligence platform handling 600M+ domain records across three applications with a shared Node.js backend.",
+      "REST APIs with JWT/RBAC, MongoDB + Elasticsearch-powered search, and Stripe billing with Redis caching.",
+      "Async CSV/Excel export pipeline with BullMQ and ExcelJS.",
+    ],
+  },
+  {
+    name: "API Monitoring & Observability Platform",
+    tagline: "Real-time uptime & incident monitoring SaaS",
+    type: "Company Project",
+    tech: [
+      "Next.js",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Redis",
+      "BullMQ",
+      "Socket.io",
+      "TypeScript",
+      "Docker",
+    ],
+    description: [
+      "Real-time API health, uptime, and response-time monitoring with a Redis/BullMQ background engine.",
+      "Incident management, automated recovery detection, and live Socket.io dashboards.",
+      "Secured with JWT, RBAC, rate limiting, alerts, and status pages; Docker-based deployment.",
+    ],
+  },
+  {
+    name: "SmartCampus",
+    tagline: "Multi-Tenant School & College Management SaaS",
+    type: "Personal Project",
+    tech: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Redis",
+      "BullMQ",
+      "Socket.io",
+      "Razorpay",
+      "TypeScript",
+      "Docker",
+    ],
+    description: [
+      "Multi-tenant school & college management SaaS covering attendance, fees, exams, homework, library, transport, and payroll across student, parent, and staff roles.",
+      "Secure REST APIs with JWT access/refresh tokens, OTP login, TOTP 2FA, and RBAC with per-member permission overrides; Razorpay billing with PDF receipt generation.",
+      "Real-time chat, notices, and live class-status features with Socket.io, plus background job processing with Redis/BullMQ and AI-assisted features.",
+    ],
+  },
+];
+
+export const education = [
+  {
+    school: "Punjab Technical University",
+    degree: "Bachelor of Technology, Computer Science",
+    period: "September 2021 – June 2025",
+  },
+  {
+    school: "Zila School Chhapra, Saran (BSEB)",
+    degree: "Intermediate, Mathematics and Science",
+    period: "June 2018 – February 2020",
+  },
+  {
+    school: "Utkramit M S Panapur Mohammedpur, Saran",
+    degree: "Matriculation",
+    period: "March 2017 – May 2018",
+  },
+];
