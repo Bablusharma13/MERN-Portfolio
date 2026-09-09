@@ -69,7 +69,7 @@ export const skillGroups = [
   },
   {
     category: "DevOps & Tools",
-    skills: ["CI/CD", "Docker", "Git", "GitHub", "Postman"],
+    skills: ["CI/CD", "Docker", "Git", "GitHub", "Vercel", "Render", "Linux", "Postman"],
   },
   {
     category: "AI-Assisted Development",
