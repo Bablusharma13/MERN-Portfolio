@@ -26,7 +26,7 @@ export const profile = {
   stats: [
     { label: "Years of experience", value: "2+" },
     { label: "SaaS platforms shipped", value: "3" },
-    { label: "Domain records handled", value: "600M+" },
+    { label: "Domain records handled", value: "710M+" },
   ],
 } as const;
 
@@ -117,9 +117,9 @@ export const experience: Experience[] = [
         "Docker",
       ],
       highlights: [
-        "Built a domain intelligence platform handling 600M+ domain records across three applications with a shared Node.js backend.",
-        "Developed REST APIs with JWT/RBAC, used MongoDB and Elasticsearch for domain search, and integrated Stripe billing with Redis caching.",
-        "Built async CSV/Excel export with BullMQ and ExcelJS, and managed frontend state using Redux Toolkit and TanStack React Query.",
+        "Built a domain intelligence platform indexing 710M+ domains and 230M+ company records across three applications with a shared Node.js backend.",
+        "Developed REST APIs with JWT/RBAC, used MongoDB and Elasticsearch for domain, WHOIS, DNS, and SSL search, and integrated Stripe billing with Redis caching.",
+        "Built async CSV/Excel/Parquet export with BullMQ and ExcelJS across 1,000+ API endpoints, and managed frontend state using Redux Toolkit and TanStack React Query.",
       ],
     },
   },
@@ -190,9 +190,9 @@ export const projects: Project[] = [
       "Docker",
     ],
     description: [
-      "Domain intelligence platform handling 600M+ domain records across three applications with a shared Node.js backend.",
-      "REST APIs with JWT/RBAC, MongoDB + Elasticsearch-powered search, and Stripe billing with Redis caching.",
-      "Async CSV/Excel export pipeline with BullMQ and ExcelJS.",
+      "Domain intelligence platform indexing 710M+ domains and 230M+ company records across three applications with a shared Node.js backend.",
+      "REST APIs with JWT/RBAC, and MongoDB + Elasticsearch-powered search across linked WHOIS, DNS, SSL, and IP/ASN data, plus Stripe billing with Redis caching.",
+      "Async CSV/Excel/Parquet export pipeline with BullMQ and ExcelJS, backing a platform exposing 1,000+ API endpoints.",
     ],
     links: {
       live: "https://marketxy.com/",
