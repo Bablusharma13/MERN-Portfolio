@@ -98,13 +98,21 @@ export function Projects() {
                     </a>
                   ) : null}
                 </div>
-              ) : (
+              ) : null}
+
+              {project.note ? (
+                <p className="mt-2 text-[11px] leading-relaxed text-white/35">
+                  {project.note}
+                </p>
+              ) : null}
+
+              {!project.links?.github && !project.links?.live ? (
                 <p className="mt-5 border-t border-white/10 pt-4 text-xs text-white/35">
                   {project.type === "Company Project"
                     ? "Private codebase — details available on request."
                     : "Source available on request."}
                 </p>
-              )}
+              ) : null}
             </GlassCard>
           </motion.div>
         ))}

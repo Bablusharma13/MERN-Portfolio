@@ -2,6 +2,7 @@
 // Edit this file to update what's shown on the site and what the AI chat knows.
 
 export const profile = {
+  siteUrl: "https://bablu-kumar-portfolio.vercel.app",
   name: "Bablu Kumar",
   initials: "BK",
   role: "MERN Stack Developer",
@@ -170,6 +171,7 @@ export type Project = {
   tech: string[];
   type: "Company Project" | "Personal Project";
   links?: { github?: string; live?: string };
+  note?: string;
 };
 
 export const projects: Project[] = [
@@ -244,6 +246,7 @@ export const projects: Project[] = [
     links: {
       live: "https://smartcampus-t712.onrender.com/",
     },
+    note: "Hosted on Render's free tier — the demo may take ~30s to wake up on first load.",
   },
 ];
 
