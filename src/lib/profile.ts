@@ -198,6 +198,9 @@ export const projects: Project[] = [
       "REST APIs with JWT/RBAC, MongoDB + Elasticsearch-powered search, and Stripe billing with Redis caching.",
       "Async CSV/Excel export pipeline with BullMQ and ExcelJS.",
     ],
+    links: {
+      live: "https://marketxy.com/",
+    },
   },
   {
     name: "API Monitoring & Observability Platform",
@@ -223,7 +226,7 @@ export const projects: Project[] = [
   },
   {
     name: "SmartCampus",
-    tagline: "Multi-Tenant School & College Management SaaS",
+    tagline: "Multi-Tenant School / Coaching SaaS",
     type: "Personal Project",
     tech: [
       "React.js",
@@ -238,10 +241,13 @@ export const projects: Project[] = [
       "Docker",
     ],
     description: [
-      "Multi-tenant school & college management SaaS covering attendance, fees, exams, homework, library, transport, and payroll across student, parent, and staff roles.",
-      "Secure REST APIs with JWT access/refresh tokens, OTP login, TOTP 2FA, and RBAC with per-member permission overrides; Razorpay billing with PDF receipt generation.",
-      "Real-time chat, notices, and live class-status features with Socket.io, plus background job processing with Redis/BullMQ and AI-assisted features.",
+      "Multi-tenant SaaS with 20+ features across six modules — academics, fees, communication, campus ops, an AI assistant, and admin/trust — covering admissions, attendance, exams, homework, library, and transport for student, parent, and staff roles.",
+      "Secure REST APIs with JWT access/refresh tokens, OTP login, TOTP 2FA, and RBAC with per-member permission overrides; Razorpay billing with PDF receipt generation and a full audit trail.",
+      "Built-in AI assistant (student analysis, parent reports, question drafts, doubt solver) alongside real-time parent-teacher chat, notices, and live class-status via Socket.io, backed by Redis/BullMQ background jobs.",
     ],
+    links: {
+      live: "https://smartcampus-t712.onrender.com/",
+    },
   },
 ];
 
