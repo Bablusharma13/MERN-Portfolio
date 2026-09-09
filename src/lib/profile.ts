@@ -72,10 +72,6 @@ export const skillGroups = [
     skills: ["CI/CD", "Docker", "Git", "GitHub", "Postman"],
   },
   {
-    category: "Testing",
-    skills: ["Jest", "Playwright", "React Testing Library", "Supertest", "Vitest"],
-  },
-  {
     category: "AI-Assisted Development",
     skills: ["Claude", "Codex", "ChatGPT", "Cursor", "Prompt Engineering"],
   },
