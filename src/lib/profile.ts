@@ -201,6 +201,29 @@ export const projects: Project[] = [
     },
   },
   {
+    name: "SyberFort",
+    tagline: "Real-Time Domain Threat Intelligence & Brand Protection",
+    type: "Company Project",
+    tech: [
+      "Next.js",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Elasticsearch",
+      "Redis",
+      "Docker",
+    ],
+    description: [
+      "Real-time domain threat-intelligence platform scanning 12M+ domains daily across 10 intelligence layers — website fingerprint, WHOIS ownership, SSL, infrastructure, and typosquat/homoglyph detection.",
+      "Self-serve security products (Due Diligence, Brand Monitor, Global Blacklist) backed by a 12M+ indicator feed with REST API and STIX/TAXII support for SIEM integration.",
+      "Automated phishing and brand-impersonation detection with takedown workflows, powering due-diligence and fraud checks for government agencies, universities, and enterprises.",
+    ],
+    links: {
+      live: "https://syberfort.com/",
+    },
+  },
+  {
     name: "API Monitoring & Observability Platform",
     tagline: "Real-time uptime & incident monitoring SaaS",
     type: "Company Project",
